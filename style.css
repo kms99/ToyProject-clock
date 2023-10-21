@@ -27,8 +27,8 @@ h2{
 
 .wrapper{
     width: 80vw;
+    min-width: 35rem;
     min-height: 100vh;
-    min-width: 80rem;
     margin: auto;
 
     display: flex;
@@ -112,4 +112,11 @@ h2{
 .number-time{
     font-size: 5rem;
     color: white;
+}
+
+@media screen and (max-width:500px) {
+    .clock-container{
+        width: 30rem;
+        height: 30rem;
+    }
 }
