@@ -1,0 +1,115 @@
+html,
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+body{
+    background: url('./image/background.jpg') center/cover;
+}
+
+/* reset */
+h1,
+h2{
+    margin: unset;
+    padding: unset;
+}
+
+.wrapper{
+    width: 80vw;
+    min-height: 100vh;
+    min-width: 80rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-title{
+    font-size: 4rem;
+}
+
+.clock-container{
+    margin: 3rem 0;
+    width: 50rem;
+    height: 50rem;
+}
+
+.clock{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+
+.clock__center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%) ;
+    width: 2rem;
+    height: 2rem;
+    background : black;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.clock__hour{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 1.5rem;
+    height: 60%;
+    z-index: 2;
+    transform: translate(-50%,-50%); 
+}
+.clock__hour-show{
+    height: 50%;
+    background: black;
+}
+
+.clock__minute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height: 80%;
+    z-index: 3;
+    width: 1.2rem;
+}
+.clock__minute-show{
+    height: 50%;
+    background: black;
+}
+
+.clock__second{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    width: 0.5rem;
+    height: 95%;
+    z-index: 4;
+}
+.clock__second-show{
+    height: 50%;
+    background: red;
+}
+
+.number-time{
+    font-size: 5rem;
+    color: white;
+}
