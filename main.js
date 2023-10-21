@@ -11,7 +11,7 @@ setInterval(function(){
     $minute.style.transform = `translate(-50%,-50%) rotate(${date.getMinutes()*6}deg)`;
     $second.style.transform = `translate(-50%,-50%) rotate(${date.getSeconds()*6}deg)`;
 
-    $textHour.innerText=date.getHours()/10>1?date.getHours():`0${date.getHours()}`;
-    $textMinute.innerText=date.getMinutes()/10>1?date.getMinutes():`0${date.getMinutes()}`;
-    $textSecond.innerText=date.getSeconds()/10>1?date.getSeconds():`0${date.getSeconds()}`;
+    $textHour.innerText=date.getHours()/10>=1?date.getHours():`0${date.getHours()}`;
+    $textMinute.innerText=date.getMinutes()/10>=1?date.getMinutes():`0${date.getMinutes()}`;
+    $textSecond.innerText=date.getSeconds()/10>=1?date.getSeconds():`0${date.getSeconds()}`;
 },1000)
